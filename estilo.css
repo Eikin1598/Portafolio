@@ -15,7 +15,7 @@ html {
 }
 
 #inicio {
-    background-image: url("img/imgFondo.jpg");
+    background-image: url("img/imgFondo.webp");
     background-size: cover;
     background-position: center center;
     height: 100vh;
