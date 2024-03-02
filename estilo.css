@@ -333,14 +333,14 @@ html {
 
 .contenedor-skills .skills .barra .barra-progreso3 {
     background-color: #fff;
-    width: 80%;
+    width: 50%;
     height: 6px;
     animation: progreso3 2s forwards;
 }
 
 .contenedor-skills .skills .barra .barra-progreso4 {
     background-color: #fff;
-    width: 85%;
+    width: 50%;
     height: 6px;
     animation: progreso4 2s forwards;
 }
@@ -373,7 +373,7 @@ html {
     }
 
     100% {
-        width: 80%;
+        width: 50%;
     }
 }
 
@@ -383,7 +383,7 @@ html {
     }
 
     100% {
-        width: 85%;
+        width: 50%;
     }
 }
 
@@ -608,5 +608,12 @@ footer a {
     #contacto .contenedor-form .mitad input {
         width: 100%;
         margin-bottom: 15px;
+    }
+    .aviso {
+        width: 200px;
+        text-align: center;
+        margin: auto;
+        color: red;
+        padding-top: 20px;
     }
 }

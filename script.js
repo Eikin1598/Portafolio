@@ -39,3 +39,28 @@ function efectoHabilidades() {
     }
 
 }
+
+//Validacion de correo
+
+const nombre = document.getElementById("nombre");
+const correo = document.getElementById("correo");
+const parrafo = document.getElementById("aviso");
+const form = document.getElementById("form");
+
+form.addEventListener("submit", e =>{
+    e.preventDefault()
+    let aviso = ""
+    let entrada = false
+    let valEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/
+    if(nombre.value.length <1){
+        aviso += "Por favor ingrese un nombre"
+        entrada = true
+    }
+    if(valEmail.test(correo.value)){
+        aviso += "Por favor intruzca un correo válido!"
+        entrada = true
+    }
+    if(entrada){
+        parrafo.innerHTML = aviso;
+    }
+})
