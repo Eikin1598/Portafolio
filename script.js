@@ -57,7 +57,7 @@ form.addEventListener("submit", e =>{
         entrada = true
     }
     if(!valEmail.test(correo.value)){
-        aviso += "Por favor intruzca un correo válido!"
+        aviso += "Por favor introduzca un correo válido!"
         entrada = true
     }
     if(entrada){
